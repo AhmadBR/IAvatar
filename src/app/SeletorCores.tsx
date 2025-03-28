@@ -47,8 +47,7 @@ export function SeletorCores({ corPadrao, mudarCor, tipoCor }: SeletorCoresProps
       return 'transparent'
     }
   }
-
-
+  
   return (
     <View className="">
       <ScrollView horizontal showsHorizontalScrollIndicator={false} className="flex-row p-1 pl-2 pr-10 ml-6 mr-6"

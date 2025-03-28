@@ -57,6 +57,7 @@ export const CoresSelecao = {
       "#FF5C5C",
       "#FF488E"
    ],
+   
    inativo: [
       "#00ABBD",
       "#FFF",

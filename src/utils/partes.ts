@@ -8,8 +8,3 @@ export const partes = [
     {nome: "Olhos", tipo: 'eyes', cor: '', tipoCor:'inativo'},
     {nome: "Chapéus", tipo:'top', cor:'hatColor', tipoCor:'geral'}
 ]
-
-
-
-// hatColor: string;
-// skinColor: string;

@@ -1,4 +1,4 @@
-import React, { useState, useMemo, memo } from 'react';
+import React, { useState, useMemo, memo, useRef } from 'react';
 import { View, TouchableOpacity, FlatList } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { createAvatar } from "@dicebear/core";
@@ -30,9 +30,9 @@ const AvatarItems = memo(function AvatarItems({ corPadrao, parte, nome, muda }: 
   // Memoize the options calculation
   const options = useMemo(() => {
     if (parte === 'Corpo') return [''];
-    
+
     const dados = style?.schema?.properties?.[parte].items?.enum || [];
-    
+
     if (nome === 'Chapéus') {
       return dados.slice(0, 7);
     } else if (nome === 'Cabelo') {
@@ -44,7 +44,7 @@ const AvatarItems = memo(function AvatarItems({ corPadrao, parte, nome, muda }: 
   // Memoize the avatars generation
   const avatars = useMemo(() => {
     if (!Array.isArray(options)) return [];
-    
+
     return options.map((option, index) => {
       const avatarOptions = {
         size: 64,
@@ -55,7 +55,7 @@ const AvatarItems = memo(function AvatarItems({ corPadrao, parte, nome, muda }: 
         accessoriesProbability: parte === 'accessories' ? 100 : 0,
         facialHairProbability: parte === 'facialHair' ? 100 : 0,
       };
-      
+
       return {
         xml: createAvatar(style, avatarOptions).toString(),
         index
@@ -98,16 +98,17 @@ const AvatarItems = memo(function AvatarItems({ corPadrao, parte, nome, muda }: 
 
   if (parte === 'Corpo') return null;
 
+
   return (
     <View className="">
-      <FlatList className='px-4' 
+      <FlatList className='px-4'
         data={[{ xml: '', index: -1 }, ...avatars]}
         keyExtractor={(item) => item.index.toString()}
         renderItem={({ item, index }) => {
           if (item.index === -1) {
             return (
               <TouchableOpacity onPress={() => { mudarAvatar(100); setSelecao(null) }}>
-                <View 
+                <View
                   className="rounded-2xl w-[80] h-[80] mx-2 items-center justify-center"
                   style={{
                     margin: 5,
