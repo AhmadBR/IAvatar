@@ -5,7 +5,7 @@
 </p>
 
 ## 📥 Download  
-[![Download APK](https://img.shields.io/badge/Download-IAvatar_APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/AhmadBR/IAvatar/releases/latest/download/app-release.apk)  
+[![Download APK](https://img.shields.io/badge/Download-IAvatar_APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/AhmadBR/IAvatar/releases/latest/download/1.0.0/IAvatar-1.0.0.apk)  
 *(Versão mais recente para Android)*  
 
 ## 🌟 Sobre
