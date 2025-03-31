@@ -4,6 +4,10 @@
   <img src="https://github.com/user-attachments/assets/cc5ace29-e6e4-443f-a2e2-93afa13a0fa8" width="200" alt="Logo do IAvatar"/>
 </p>
 
+## 📥 Download  
+[![Download APK](https://img.shields.io/badge/Download-IAvatar_APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/AhmadBR/IAvatar/releases/latest/download/app-release.apk)  
+*(Versão mais recente para Android)*  
+
 ## 🌟 Sobre
 
 O **IAvatar** é um aplicativo multiplataforma desenvolvido em React Native que permite criar avatares incrivelmente personalizados. Utilizando a poderosa biblioteca [DiceBear](https://www.dicebear.com), oferecemos uma experiência intuitiva para gerar avatares únicos, perfeitos para perfis, jogos ou identificação visual.
